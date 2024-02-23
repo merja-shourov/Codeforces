@@ -12,15 +12,15 @@ int main(void){
 
         int temp = tk / 3;
 
-        if( tk % 3 == 0 ){
+        if( temp*2 + temp*1 == tk ){
             c1 = temp;
             c2 = temp;
         }else{
             if( tk%3 == 2 ){
                 c2 = temp+1;
                 c1 = temp;
-            }else{
-                c1 = temp + 1;
+            }else if( tk % 3 == 1){
+                c1 = temp + tk%3;
                 c2 = temp;
             }
 
