@@ -8,13 +8,14 @@ void solution(){
     if( n % 7 == 0 ){
         ans = n;
     }else{
-        int rem = n % 7;
-        int tmp = n;
-        tmp = tmp-rem;
-        ans = tmp;
-        if( tmp%10 == 0 ){
-            n = n + (7-rem);
-            ans = n;
+        int rem = n%7;
+        int last_dig = n%10;
+        int var = 7-rem;
+
+        if( last_dig + var < 10 ){
+            ans = n + var;
+        }else{
+            ans = n-rem;
         }
     }
     
