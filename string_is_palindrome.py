@@ -42,16 +42,5 @@ def symmetrical(str):
 
 
 
-# approch 2
-
-name = "akiaki"
-first = name[:len(name)//2]
-second = name[len(name)//2:]
-
-if( first == second ):
-    print("True")
-
-rev_name = name[::-1]
-
 
 
